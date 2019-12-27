@@ -14,11 +14,12 @@ public class Exercicio_Quatro {
 		for (int i = 0; i < N; i++) {
 			x = sc.nextInt();
 			y = sc.nextInt();
-			if (x >= 0 || y >= 0) {
-				double div = x / y;
-				System.out.println(div);
-			} else if (y == 0) {
+			if (y == 0) {
 				System.out.println("Divisão impossível");
+
+			} else {
+				double div = (double) x / y;
+				System.out.println(div);
 			}
 		}
 
